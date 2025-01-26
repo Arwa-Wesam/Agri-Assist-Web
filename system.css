@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+PE:wght@100..400&family=Zain:wght@200;300;400;700;800;900&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: black;
+  font-family: "Cairo", serif;
+  direction: rtl;
+  overflow-x: hidden;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li ,.contact a{
+    margin-right: 20px;
+  }
+  
+  .nav-links a, .contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
+  .contact i{
+    color: #6ADB9F;
+  }
+  a:hover , i:hover{
+    cursor: pointer;
+  }
+  /* For navbar responsiveness */
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-top: 50px;
+  }
+  a{
+    font-size: x-small;
+  }
+}
+#tel{
+  text-decoration: underline;
+  color: #53AB9D;
+  text-align: left;
+}
+*{
+    color: white;
+    text-align: right;
+    justify-self: right;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+video{
+  border-radius: 20px;
+}
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  height:max-content;
+  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
+  background-color: #131313;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.header{
+  width:100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  align-self: center;
+}
+.header h1,.header p{
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.card p {
+  margin: 0;
+  font-size: 14px;
+  color: white;
+}
+/* For smaller screens (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* One card per row */
+    gap: 20px;
+    padding: 10px;
+  }
+  .body {
+    flex-direction: column;
+  }
+}
+
+/* For extra small screens (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    gap: 10px;
+    padding: 5px;
+  }
+  .body {
+    padding: 20px;
+  }
+}
+
+
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    color: white;
+  }

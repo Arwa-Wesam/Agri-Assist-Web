@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Italianno&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+TAS:wght@100..400&family=Playwrite+PE:wght@100..400&family=Zain:wght@200;300;400;700;800;900&display=swap');
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: black;
+  font-family: "Cairo", serif;
+  direction: rtl;
+  overflow-x: hidden;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li ,.contact a{
+    margin-right: 20px;
+  }
+  
+  .nav-links a, .contact a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
+  .contact i{
+    color: #6ADB9F;
+  }
+  a:hover , i:hover{
+    cursor: pointer;
+  }
+  /* For navbar responsiveness */
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-top: 50px;
+  }
+  a{
+    font-size: x-small;
+  }
+}
+#tel{
+  text-decoration: underline;
+  color: #53AB9D;
+  text-align: left;
+}
+*{
+    color: white;
+}
+#plants{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-self: center ;
+    margin-top: 100px;
+    background-color: #232323;
+    color: black;
+  
+    
+  }
+  #plants h1,.descr{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+  #plants .part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
+    background-color: #131313;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+  }
+  .part2 h3,.part2 p{
+    width: 100%;
+    text-align: right;
+    color: #fff;
+  }
+  p{
+    font-size: large;
+    font-weight: lighter;
+    
+  }
+  #plants img{
+    width: 30%;
+    height: auto;
+  }
+  #plants .part2 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 40%;
+    align-items: right;
+    text-align: right;
+  
+  }
+  /* For smaller screens (max-width: 768px) */
+  @media only screen and (max-width: 600px) {
+  .part2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .part2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .part2 div {
+    padding: 20px;
+  }
+  .part2 h3 {
+    font-size: 18px;
+  }
+  .part2 p {
+    font-size: 14px;
+  }
+}
+
+
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  p{
+    color: white;
+  }
