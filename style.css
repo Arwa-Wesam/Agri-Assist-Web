@@ -99,6 +99,10 @@ body {
     width: 50%;
     text-align: right;
   }
+.name{
+  width: 100%;
+  height: auto;
+}
   .section1-content button{
     font-weight: bold;
     font-size: larger;
